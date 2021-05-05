@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Love compatibility</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <input type="text" id="ip1">
+        <input type="text" id="ip2">
+        <button id="bt">calculate</button>
+        <br>
+        <br>
+        <div id="div1">
+
+        </div>
+        <script type="text/javascript">
+        document.getElementById("bt").onclick=function(){
+            var name1=document.getElementById("ip1").value;
+            var name2=document.getElementById("ip2").value;
+            var com=Math.floor(Math.random()*100);
+                    document.getElementById("div1").innerHTML=name1+ " & "+name2+" are "  +com+"%compatible";
+
+        }
+        </script>
+    </body>
+</html>
